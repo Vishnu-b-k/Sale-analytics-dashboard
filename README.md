@@ -33,6 +33,7 @@ Beyond raw numbers, the platform generates 5 critical "Areas of Improvement":
 - **Backend** (Render): 
     - Create a **Web Service**.
     - Set **Root Directory** to `backend`.
+    - Add Environment Variable: **`PYTHON_VERSION`** = `3.12.9`
     - Build Command: `pip install -r requirements.txt`
     - Start Command: `uvicorn main:app --host 0.0.0.0 --port 10000`
 - **Frontend** (Vercel): 
