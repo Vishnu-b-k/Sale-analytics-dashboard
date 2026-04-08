@@ -30,10 +30,14 @@ Beyond raw numbers, the platform generates 5 critical "Areas of Improvement":
 
 ## 🛠️ Technical Stack
 
-- **Frontend**: Next.js 14 (App Router), TypeScript, Recharts, Lucide, Modular CSS.
-- **Backend**: FastAPI, Pandas (In-Memory Processing), NumPy, Uvicorn.
-- **Styling**: Custom **Neon-Pastel** Design System with persistent Dark/Light mode.
-- **Deployment**: Optimized for Vercel (Frontend) and Render (Backend).
+- **Backend** (Render): 
+    - Create a **Web Service**.
+    - Set **Root Directory** to `backend`.
+    - Build Command: `pip install -r requirements.txt`
+    - Start Command: `uvicorn main:app --host 0.0.0.0 --port 10000`
+- **Frontend** (Vercel): 
+    - Set **Root Directory** to `frontend`.
+    - Set Environment Variable `NEXT_PUBLIC_API_URL` to your Render URL.
 
 ---
 
